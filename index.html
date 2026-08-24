@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam Chacko Maliyakel | Family Office Financial Operations & Applied Domain Tooling</title>
+  <meta name="description" content="Senior Finance & Family Office Specialist. 8+ years managing multi-entity accounting, $1B+ portfolio models, and builder of privacy-first, client-side financial tools." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sam Chacko Maliyakel | Family Office Financial Operations & Domain Tooling" />
+  <meta property="og:description" content="Take the problem to AI, not the sensitive financial data. Zero-knowledge, client-side tools solving structural accounting friction." />
+  <meta property="og:url" content="https://utharam.github.io/about-me-samcm/" />
+
+  <!-- Google Fonts - Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            slate: {
+              850: '#0f172a',
+              900: '#0b1120',
+              950: '#060913',
+            },
+            cyan: {
+              450: '#16b9d6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #060913;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+    .glow-cyan {
+      box-shadow: 0 0 50px -12px rgba(6, 182, 212, 0.15);
+    }
+    .radial-gradient-hero {
+      background: radial-gradient(circle at 50% -20%, rgba(6, 182, 212, 0.12), rgba(15, 23, 42, 0) 70%);
+    }
+    .grid-pattern {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500/20 selection:text-cyan-300 min-h-screen relative overflow-x-hidden">
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 border border-cyan-500/40 text-slate-100 px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+    <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+    </svg>
+    <span id="toast-message" class="text-sm font-medium">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Background decorative glows -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] radial-gradient-hero pointer-events-none -z-10"></div>
+  <div class="fixed inset-0 grid-pattern pointer-events-none -z-20 opacity-60"></div>
+
+  <!-- Navigation / Header Bar -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-slate-950/80 border-b border-slate-800/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand & Status -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500/20 to-slate-800 border border-cyan-500/30 flex items-center justify-center font-mono font-bold text-cyan-400 text-sm group-hover:border-cyan-400 transition-colors">
+          SCM
+        </div>
+        <div class="flex flex-col">
+          <span class="font-semibold text-sm tracking-tight text-slate-100 group-hover:text-cyan-400 transition-colors">Sam Chacko Maliyakel</span>
+          <span class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5">
+            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Sabbatical Research
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#philosophy" class="hover:text-cyan-400 transition-colors">Philosophy</a>
+        <a href="#research" class="hover:text-cyan-400 transition-colors">Focus</a>
+        <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#essays" class="hover:text-cyan-400 transition-colors">Essays</a>
+        <a href="#qualifications" class="hover:text-cyan-400 transition-colors">Credentials</a>
+      </nav>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-2.5">
+        <button onclick="copyEmail()" title="Copy Email: samcmaliyakel@gmail.com" class="px-3 py-1.5 text-xs font-medium text-slate-300 bg-slate-900 hover:bg-slate-800 hover:text-cyan-400 border border-slate-700/70 hover:border-cyan-500/40 rounded-lg transition-all flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          <span class="hidden sm:inline">Copy Email</span>
+        </button>
+
+        <a href="mailto:samcmaliyakel@gmail.com" class="px-3.5 py-1.5 text-xs font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-lg transition-colors shadow-sm shadow-cyan-500/30 flex items-center gap-1.5">
+          <span>Contact</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+    <!-- SECTION 1: Hero & Value Proposition -->
+    <section id="hero" class="pt-4 sm:pt-8 space-y-8">
+      
+      <!-- Badges row -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+          Senior Finance & Family Office Specialist
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-slate-800 text-slate-300 border border-slate-700">
+          Applied Domain Tooling
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-slate-800 text-slate-300 border border-slate-700">
+          Tax & Systems Research
+        </span>
+      </div>
+
+      <!-- Main Headline & Subtitle -->
+      <div class="space-y-4 max-w-4xl">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100 leading-tight">
+          Sam Chacko Maliyakel
+        </h1>
+        <p class="text-lg sm:text-xl font-medium text-cyan-400 tracking-tight">
+          Family Office Financial Operations • Applied AI & Domain Tooling • Tax & Compliance
+        </p>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl pt-2">
+          Finance professional with <strong>8+ years</strong> managing full-cycle multi-entity accounting, <strong>$1B+ multi-asset portfolio tracking</strong>, and treasury operations in single-family office environments. Builder of privacy-first, client-side tools solving structural accounting friction.
+        </p>
+      </div>
+
+      <!-- Social & Direct Action Links -->
+      <div class="flex flex-wrap items-center gap-3 pt-2">
+        <a href="https://github.com/Utharam" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-200 transition-all group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-cyan-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span>github.com/Utharam</span>
+          <svg class="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
+
+        <a href="https://medium.com/@samcmaliyakel" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-200 transition-all group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-cyan-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75 0-3.17.53-5.75 1.19-5.75.66 0 1.19 2.58 1.19 5.75z"></path>
+          </svg>
+          <span>medium.com/@samcmaliyakel</span>
+          <svg class="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
+
+        <a href="mailto:samcmaliyakel@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-200 transition-all group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-cyan-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+          <span>samcmaliyakel@gmail.com</span>
+        </a>
+      </div>
+
+      <!-- Philosophy Strip / Callout Box -->
+      <div id="philosophy" class="relative rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900 border border-cyan-500/30 p-6 sm:p-8 glow-cyan overflow-hidden">
+        <div class="absolute -right-8 -top-8 w-44 h-44 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center flex-shrink-0 text-cyan-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <div class="space-y-3">
+            <div class="text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">
+              Guiding Engineering Philosophy
+            </div>
+            <blockquote class="text-lg sm:text-xl font-semibold text-slate-100 italic leading-snug">
+              “Take the problem to AI, not the sensitive financial data. AI will not replace accounting rigor—it empowers accountants to build lean, private tools that eliminate operational friction.”
+            </blockquote>
+            <div class="grid sm:grid-cols-3 gap-4 pt-3 border-t border-slate-800 text-xs text-slate-300">
+              <div class="space-y-1">
+                <span class="font-semibold text-slate-100 block flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                  Zero-Knowledge Architecture
+                </span>
+                <span class="text-slate-400">Financial data never touches remote LLMs or cloud backends; all utilities execute in-browser.</span>
+              </div>
+              <div class="space-y-1">
+                <span class="font-semibold text-slate-100 block flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                  Pragmatic AI Skepticism
+                </span>
+                <span class="text-slate-400">AI accelerates structural problem solving, not an unverified replacement for audit precision.</span>
+              </div>
+              <div class="space-y-1">
+                <span class="font-semibold text-slate-100 block flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  Lean Institutional Tooling
+                </span>
+                <span class="text-slate-400">Offline-ready micro-apps built to eliminate manual spreadsheet drag and institutional lag.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Active Sabbatical & Research Focus -->
+    <section id="research" class="space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">Current Track</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Active Focus • Sabbatical Research</h2>
+        </div>
+        <span class="px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hidden sm:inline-block">
+          Sprint in Progress
+        </span>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Track 1 -->
+        <div class="rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 transition-all">
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 font-mono text-xs font-bold">
+            01
+          </div>
+          <h3 class="text-lg font-semibold text-slate-100">Zero-Knowledge Browser Utilities</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Developing client-side, zero-knowledge browser engines for accounting workflows using <strong>DuckDB-Wasm</strong>, <strong>IndexedDB (Dexie.js)</strong>, and <strong>SheetJS</strong>—ensuring large datasets never leave memory.
+          </p>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 transition-all">
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 font-mono text-xs font-bold">
+            02
+          </div>
+          <h3 class="text-lg font-semibold text-slate-100">Tax Systems & Cross-Border Frameworks</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            In-depth analysis of <strong>Indian Corporate Tax</strong>, <strong>GST compliance</strong> frameworks, UAE VAT mechanisms, and evolving international tax architectures (<strong>OECD Pillar One / Pillar Two</strong>).
+          </p>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 transition-all">
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 font-mono text-xs font-bold">
+            03
+          </div>
+          <h3 class="text-lg font-semibold text-slate-100">Schema-Only LLM Architecture</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Designing prompt engineering and schema extraction protocols that feed table structure, column mappings, and audit rules into LLMs to generate queries without exposing transactional ledger data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Core Financial Operations Experience -->
+    <section id="experience" class="space-y-8">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">Institutional Track Record</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Core Financial Operations Experience</h2>
+      </div>
+
+      <div class="space-y-8 relative before:absolute before:inset-0 before:left-3 sm:before:left-4 before:h-full before:w-0.5 before:bg-slate-800">
+        
+        <!-- Experience Item 1: Direct Information FZC -->
+        <div class="relative pl-8 sm:pl-12 space-y-4">
+          <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-cyan-400 border-4 border-slate-950"></div>
+          
+          <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-6 sm:p-7 space-y-5 hover:border-slate-700 transition-all">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+              <div>
+                <h3 class="text-xl font-bold text-slate-100">Direct Information FZC</h3>
+                <p class="text-sm font-medium text-cyan-400">Assistant Accountant / Family Office Financial Operations</p>
+              </div>
+              <div class="text-xs font-mono text-slate-400 bg-slate-800/80 px-3 py-1 rounded-md self-start sm:self-auto border border-slate-700/50">
+                May 2019 – 2025 | UAE
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+              <!-- Achievement A -->
+              <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800/60 space-y-1.5">
+                <div class="font-semibold text-slate-100 flex items-center gap-2">
+                  <span class="text-cyan-400 font-mono text-xs">01</span>
+                  $1B+ Portfolio Engine
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Maintained multi-currency weekly and monthly valuation models tracking an aggregate asset base exceeding <strong>$1B</strong> across private equity & venture capital capital calls, direct public equity, debt, real estate, and credit lines.
+                </p>
+              </div>
+
+              <!-- Achievement B -->
+              <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800/60 space-y-1.5">
+                <div class="font-semibold text-slate-100 flex items-center gap-2">
+                  <span class="text-cyan-400 font-mono text-xs">02</span>
+                  40-Entity Governance Matrix
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Directed full-cycle financial reporting for 20 active operating entities (SPVs, Media, Real Estate, Holding Cos) and managed monthly intercompany reconciliation matrices across a 40-company group structure.
+                </p>
+              </div>
+
+              <!-- Achievement C -->
+              <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800/60 space-y-1.5">
+                <div class="font-semibold text-slate-100 flex items-center gap-2">
+                  <span class="text-cyan-400 font-mono text-xs">03</span>
+                  Historical Accrual Engine
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Architected an automated Excel-based accrual calculation engine with dynamic cash-to-accrual reconciliation checkpoints, restructuring a legacy 20-year multi-currency UBO ledger with complete mathematical integrity.
+                </p>
+              </div>
+
+              <!-- Achievement D -->
+              <div class="p-4 rounded-lg bg-slate-950/60 border border-slate-800/60 space-y-1.5">
+                <div class="font-semibold text-slate-100 flex items-center gap-2">
+                  <span class="text-cyan-400 font-mono text-xs">04</span>
+                  Treasury & Compliance Operations
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Executed international wire transfers, telegraphic transfers (TT), and credit card settlements; prepared UAE VAT returns; and drafted board resolutions and intercompany loan agreements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 2: Nedumparambil Credit Syndicate -->
+        <div class="relative pl-8 sm:pl-12 space-y-4">
+          <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-slate-600 border-4 border-slate-950"></div>
+          
+          <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-5 sm:p-6 space-y-3 hover:border-slate-700 transition-all">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+              <div>
+                <h3 class="text-lg font-bold text-slate-200">Nedumparambil Credit Syndicate</h3>
+                <p class="text-sm font-medium text-slate-400">Accountant</p>
+              </div>
+              <div class="text-xs font-mono text-slate-400 bg-slate-800/60 px-2.5 py-1 rounded self-start sm:self-auto border border-slate-700/40">
+                Jul 2017 – Sep 2018 | India
+              </div>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Handled comprehensive balance sheet reconciliations, month-end closing procedures, cash management, and structured internal reporting schedules for credit and loan portfolios.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 3: Thekkuthode Service Co-operative Bank -->
+        <div class="relative pl-8 sm:pl-12 space-y-4">
+          <div class="absolute left-1.5 sm:left-2.5 top-1.5 w-3.5 h-3.5 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+          
+          <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-5 sm:p-6 space-y-3 hover:border-slate-700 transition-all">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+              <div>
+                <h3 class="text-lg font-bold text-slate-200">Thekkuthode Service Co-operative Bank</h3>
+                <p class="text-sm font-medium text-slate-400">Junior Accountant</p>
+              </div>
+              <div class="text-xs font-mono text-slate-400 bg-slate-800/60 px-2.5 py-1 rounded self-start sm:self-auto border border-slate-700/40">
+                Jul 2016 – Feb 2017 | India
+              </div>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Maintained general ledger books and day-to-day transaction records; actively supported the operational migration from legacy physical paper ledgers to computerized core banking systems.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: Domain Engineering & Privacy-First Repositories -->
+    <section id="projects" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-800 pb-4 gap-4">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">Software Scaffolding</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Domain Engineering & Privacy-First Repositories</h2>
+          <p class="text-sm text-slate-400 mt-1">Stand-alone, client-side tools built to eliminate institutional spreadsheet drag.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex items-center gap-2 text-xs font-mono flex-wrap" id="project-filters">
+          <button onclick="filterProjects('all')" class="filter-btn px-3 py-1 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/40" data-filter="all">All (5)</button>
+          <button onclick="filterProjects('zk')" class="filter-btn px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200" data-filter="zk">Zero-Knowledge SQL</button>
+          <button onclick="filterProjects('pwa')" class="filter-btn px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200" data-filter="pwa">Local-First / PWA</button>
+          <button onclick="filterProjects('automation')" class="filter-btn px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200" data-filter="automation">Automation</button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6" id="projects-grid">
+        
+        <!-- Project 1: LedgerDuck -->
+        <div class="project-card rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-5 flex flex-col justify-between hover:border-cyan-500/40 transition-all" data-category="zk">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-100">LedgerDuck</h3>
+                  <span class="text-xs font-mono text-cyan-400">Zero-Knowledge SQL Audit Engine</span>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/40">100% In-Browser</span>
+            </div>
+
+            <div class="space-y-2 text-sm">
+              <p class="text-slate-300 leading-relaxed text-xs sm:text-sm">
+                <strong class="text-slate-200">Core Problem Solved:</strong> Auditing large general ledgers and trial balances without leaking confidential records to cloud servers or crashing Excel.
+              </p>
+              <div class="p-3 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-400 leading-relaxed space-y-1.5">
+                <span class="font-semibold text-slate-300 block">Architecture & Privacy Design:</span>
+                Powered by <strong>DuckDB-Wasm</strong> and <strong>React</strong>; runs 100% in-browser. Features ingestion guardrails (merged cell rejection, rectangular validation), 1-click audit checks (split payments, round sums, materiality outliers), and a schema-only LLM prompt helper.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/70">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">DuckDB-Wasm</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">React</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Client-Side SQL</span>
+            </div>
+            <a href="https://github.com/Utharam/LedgerDuck" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-medium text-cyan-400 hover:text-cyan-300">
+              <span>Repository</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Corporate Structure Builder -->
+        <div class="project-card rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-5 flex flex-col justify-between hover:border-cyan-500/40 transition-all" data-category="pwa">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-100">Corporate Structure Builder</h3>
+                  <span class="text-xs font-mono text-cyan-400">Local-First Infinite Canvas</span>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/40">Dexie.js DB</span>
+            </div>
+
+            <div class="space-y-2 text-sm">
+              <p class="text-slate-300 leading-relaxed text-xs sm:text-sm">
+                <strong class="text-slate-200">Core Problem Solved:</strong> Managing multi-tier corporate hierarchies, dynamic cap tables, and UBO allocations in static spreadsheets creates visualization blind spots.
+              </p>
+              <div class="p-3 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-400 leading-relaxed space-y-1.5">
+                <span class="font-semibold text-slate-300 block">Architecture & Privacy Design:</span>
+                Built with <strong>Vue 3</strong>, <strong>Pinia</strong>, <strong>Vue Flow</strong>, and <strong>Dagre graph layout</strong>. Uses <strong>Dexie.js (IndexedDB)</strong> for 100% local persistence. Features temporal historical travel, live cap table balancing, and clean unbranded compliance PDF/SVG export.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/70">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Vue 3</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Vue Flow</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">IndexedDB</span>
+            </div>
+            <a href="https://github.com/Utharam/Corporate-structure-builder" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-medium text-cyan-400 hover:text-cyan-300">
+              <span>Repository</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Accounting Narration Generator -->
+        <div class="project-card rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-5 flex flex-col justify-between hover:border-cyan-500/40 transition-all" data-category="automation">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-100">Accounting Narration Generator</h3>
+                  <span class="text-xs font-mono text-cyan-400">Daily Rollover & Journal Generator</span>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 border border-emerald-800/40">Live Online</span>
+            </div>
+
+            <div class="space-y-2 text-sm">
+              <p class="text-slate-300 leading-relaxed text-xs sm:text-sm">
+                <strong class="text-slate-200">Core Problem Solved:</strong> Repetitive manual calculation and typing required for daily rollover deposit journal entries under fluctuating floating interest rates.
+              </p>
+              <div class="p-3 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-400 leading-relaxed space-y-1.5">
+                <span class="font-semibold text-slate-300 block">Architecture & Privacy Design:</span>
+                Built with <strong>Vue 3 & LocalStorage</strong>. Automates working-day schedules (excluding banking holidays), daily interest calculations, chained closing balances, and template-based entry generation. Zero data transmission.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/70">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Vue 3</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">LocalStorage</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Zero-Network</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <a href="https://utharam.github.io/narration-generator/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-emerald-400 hover:text-emerald-300">
+                <span>Live Tool</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="https://github.com/Utharam/narration-generator" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-cyan-400 hover:text-cyan-300">
+                <span>Repo</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Excel Cleaner & Reconciliation Engine -->
+        <div class="project-card rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-5 flex flex-col justify-between hover:border-cyan-500/40 transition-all" data-category="automation">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-100">Excel Cleaner & Recon Engine</h3>
+                  <span class="text-xs font-mono text-cyan-400">Client-Side Data Sanitizer</span>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/40">SheetJS Engine</span>
+            </div>
+
+            <div class="space-y-2 text-sm">
+              <p class="text-slate-300 leading-relaxed text-xs sm:text-sm">
+                <strong class="text-slate-200">Core Problem Solved:</strong> Messy ERP dumps, unmerged rows, text-formatted numbers, and inconsistent date formats break financial pivot tables and formula chains.
+              </p>
+              <div class="p-3 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-400 leading-relaxed space-y-1.5">
+                <span class="font-semibold text-slate-300 block">Architecture & Privacy Design:</span>
+                Built with <strong>Vue 3</strong>, <strong>Pinia</strong>, <strong>Tailwind CSS</strong>, and <strong>SheetJS</strong>. Features an explicit column data mapping engine, "true number" casting, safe null handling (never defaulting missing data to zero), and automated format standardization.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/70">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">SheetJS</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Vue 3</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">ERP Parser</span>
+            </div>
+            <a href="https://github.com/Utharam/excel-cleaner" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-medium text-cyan-400 hover:text-cyan-300">
+              <span>Repository</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: Main Deck -->
+        <div class="project-card rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-5 flex flex-col justify-between hover:border-cyan-500/40 transition-all md:col-span-2" data-category="pwa">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-slate-100">Main Deck</h3>
+                  <span class="text-xs font-mono text-cyan-400">Desktop Control Surface & Offline Accounting PWA</span>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 border border-emerald-800/40">Live PWA</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+              <p class="text-slate-300 leading-relaxed text-xs sm:text-sm">
+                <strong class="text-slate-200">Core Problem Solved:</strong> Standard productivity apps detach day-to-day work from recurring month-end accounting cycles, closing checklists, structured SOPs, and deep focus realities.
+              </p>
+              <div class="p-3 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-400 leading-relaxed space-y-1.5">
+                <span class="font-semibold text-slate-300 block">Architecture & Privacy Design:</span>
+                Built with <strong>Vanilla HTML5/ES Modules</strong> and browser-native <strong>IndexedDB</strong>. Zero build step, offline-ready, structured SOP reader mode, factual "days-since" habit tracking, and full JSON data portability.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex items-center justify-between border-t border-slate-800/70">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-400">
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Progressive Web App (PWA)</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Native IndexedDB</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">ES Modules</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded">Zero Build Step</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <a href="https://utharam.github.io/Main-Deck/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-emerald-400 hover:text-emerald-300">
+                <span>Live PWA</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="https://github.com/Utharam/Main-Deck" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-cyan-400 hover:text-cyan-300">
+                <span>Repo</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: Essays & Industry Perspectives -->
+    <section id="essays" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-slate-800 pb-4 gap-2">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">Written Thinking</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Essays & Industry Perspectives</h2>
+        </div>
+        <a href="https://medium.com/@samcmaliyakel" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
+          <span>View All on Medium</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <!-- Essay 1 -->
+        <a href="https://medium.com/@samcmaliyakel/ai-in-accounting-a-reality-based-analysis-as-of-mid-2026-02eea7f3959a" target="_blank" rel="noopener noreferrer" class="group rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 hover:bg-slate-900 transition-all flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="text-cyan-400">Accounting & AI</span>
+              <span class="flex items-center gap-1 group-hover:text-cyan-400 transition-colors">
+                Medium
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors leading-snug">
+              AI in Accounting: A Reality-Based Analysis
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Practical evaluation of where AI genuinely eliminates administrative overhead versus where it fundamentally fails to replace double-entry verification and institutional audit trails.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center text-xs font-medium text-cyan-400">
+            Read Article →
+          </div>
+        </a>
+
+        <!-- Essay 2 -->
+        <a href="https://medium.com/@samcmaliyakel/before-ai-can-handle-the-books-it-needs-to-understand-the-firm-bf5104b2eeba" target="_blank" rel="noopener noreferrer" class="group rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 hover:bg-slate-900 transition-all flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="text-cyan-400">Context & Governance</span>
+              <span class="flex items-center gap-1 group-hover:text-cyan-400 transition-colors">
+                Medium
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors leading-snug">
+              Before AI Can Handle the Books, It Needs to Understand the Firm
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Exploring why automated models struggle without organizational context, multi-entity mapping, intercompany nuance, and institutional memory.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center text-xs font-medium text-cyan-400">
+            Read Article →
+          </div>
+        </a>
+
+        <!-- Essay 3 -->
+        <a href="https://medium.com/@samcmaliyakel/stepping-on-the-grass-in-the-post-ai-era-36e511831e17" target="_blank" rel="noopener noreferrer" class="group rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 hover:bg-slate-900 transition-all flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="text-cyan-400">Philosophy & Agency</span>
+              <span class="flex items-center gap-1 group-hover:text-cyan-400 transition-colors">
+                Medium
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors leading-snug">
+              Stepping on the Grass in the Post-AI Era
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Cultural and philosophical reflections on maintaining intellectual agency, direct craft experience, and practical skills during rapid technological shifts.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center text-xs font-medium text-cyan-400">
+            Read Article →
+          </div>
+        </a>
+
+        <!-- Essay 4 -->
+        <a href="https://medium.com/@samcmaliyakel/the-emotion-token-theory-ai-and-the-future-of-human-relationships-c8dd6498f687" target="_blank" rel="noopener noreferrer" class="group rounded-xl bg-slate-900/60 border border-slate-800 p-6 space-y-3 hover:border-cyan-500/40 hover:bg-slate-900 transition-all flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="text-cyan-400">Interaction Dynamics</span>
+              <span class="flex items-center gap-1 group-hover:text-cyan-400 transition-colors">
+                Medium
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors leading-snug">
+              The Emotion-Token Theory: AI and the Future of Human Relationships
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Analytical exploration of tokenized attention, human-AI communication models, and evolving interaction dynamics across digital workflows.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center text-xs font-medium text-cyan-400">
+            Read Article →
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: Education & Tooling Grid -->
+    <section id="qualifications" class="space-y-8">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">Foundation & Systems</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Education & Tooling Grid</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Qualifications Card -->
+        <div class="rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-4">
+          <div class="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+            <span>Professional Qualifications</span>
+          </div>
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="p-3 bg-slate-950/60 rounded-lg border border-slate-800/80">
+              <span class="font-bold text-slate-200 block">CMA Intermediate</span>
+              <span class="text-slate-400 text-xs">Institute of Cost Accountants of India (ICMAI)</span>
+            </div>
+            <div class="p-3 bg-slate-950/60 rounded-lg border border-slate-800/80">
+              <span class="font-bold text-slate-200 block">Master of Commerce (M.Com)</span>
+              <span class="text-slate-400 text-xs">Accounts & Finance • Annamalai University</span>
+            </div>
+            <div class="p-3 bg-slate-950/60 rounded-lg border border-slate-800/80">
+              <span class="font-bold text-slate-200 block">Bachelor of Commerce (B.Com)</span>
+              <span class="text-slate-400 text-xs">MG University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domain & Operational Tools Card -->
+        <div class="rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-4">
+          <div class="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>Domain & Operational Core</span>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Multi-Entity Reporting</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">$1B+ Asset Portfolio Valuation</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Cash vs. Accrual Modeling</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">UAE VAT Compliance</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Intercompany Reconciliations</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Tally ERP 9</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Advanced Excel (Dynamic Arrays)</span>
+          </div>
+        </div>
+
+        <!-- Technical & Privacy Stack Card -->
+        <div class="rounded-xl bg-slate-900/70 border border-slate-800 p-6 space-y-4">
+          <div class="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            <span>Technical & Privacy Stack</span>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-2.5 py-1.5 rounded-lg bg-cyan-950/40 border border-cyan-800/40 text-cyan-300">DuckDB-Wasm</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Vue 3 / Pinia</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Vanilla JS (ES6+)</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-cyan-950/40 border border-cyan-800/40 text-cyan-300">IndexedDB (Dexie.js)</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">LocalStorage</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">SheetJS</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">Tailwind CSS</span>
+            <span class="px-2.5 py-1.5 rounded-lg bg-cyan-950/40 border border-cyan-800/40 text-cyan-300">Schema-Only Prompting</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Contact & Connect CTA -->
+    <section class="rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 sm:p-10 text-center space-y-6">
+      <div class="max-w-2xl mx-auto space-y-3">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100">Let's Discuss Institutional Finance or Lean Tooling</h2>
+        <p class="text-sm text-slate-400">
+          Interested in discussing family office financial operations, multi-entity modeling, or zero-knowledge client-side tools?
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button onclick="copyEmail()" class="px-5 py-2.5 text-sm font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-xl transition-all shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          <span>Copy samcmaliyakel@gmail.com</span>
+        </button>
+        <a href="https://github.com/Utharam" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 text-sm font-medium text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl transition-all">
+          GitHub Profile
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Sam Chacko Maliyakel. Built with semantic HTML5 & Tailwind CSS. Zero build overhead.</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/Utharam" class="hover:text-cyan-400 transition-colors">GitHub</a>
+        <a href="https://medium.com/@samcmaliyakel" class="hover:text-cyan-400 transition-colors">Medium</a>
+        <a href="mailto:samcmaliyakel@gmail.com" class="hover:text-cyan-400 transition-colors">Email</a>
+        <a href="#hero" class="hover:text-cyan-400 transition-colors">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Micro-interactions -->
+  <script>
+    // Copy Email to Clipboard with Toast Notification
+    function copyEmail() {
+      const email = 'samcmaliyakel@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.remove('translate-y-20', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-20', 'opacity-0');
+        }, 3000);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+
+    // Filter Projects by Category
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update button styling
+      buttons.forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.className = 'filter-btn px-3 py-1 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/40';
+        } else {
+          btn.className = 'filter-btn px-3 py-1 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200';
+        }
+      });
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
