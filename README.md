@@ -4,7 +4,8 @@
 > 
 > *"Take the problem to AI, not the sensitive financial data. AI will not replace accounting rigor—it empowers accountants to build lean, private tools that eliminate operational friction."*
 
-**Live Site**: [https://utharam.github.io/about-me-samcm/](https://utharam.github.io/about-me-samcm/)
+- **Live Site**: [https://utharam.github.io/about-me-samcm/](https://utharam.github.io/about-me-samcm/)
+- **Works Showcase Hub**: [https://utharam.github.io/](https://utharam.github.io/)
 
 ---
 
@@ -42,5 +43,5 @@ Client-side domain tools built with AI-assisted scaffolding and pair-programming
 ## 🎓 Credentials & Stack
 
 - **Qualifications**: CMA Intermediate (ICMAI), Master of Commerce (M.Com - Accounts & Finance, Annamalai University), Bachelor of Commerce (MG University).
-- **Domain Stack**: Multi-Entity Reporting, $1B+ Asset Portfolio Valuation, Cash vs. Accrual Modeling, UAE VAT Compliance, Intercompany Reconciliations, Tally ERP 9, Advanced Excel.
+- **Domain Stack**: Multi-Entity Reporting, $1B+ Asset Portfolio Valuation, Cash vs. Accrual Modeling, UAE VAT Compliance, Intercompany Reconciliations, Tally ERP 9.
 - **AI-Assisted Applied Tooling Stack**: DuckDB-Wasm, Vue 3, Vanilla JS, IndexedDB (Dexie.js), LocalStorage, SheetJS, Tailwind CSS, Schema-Only Prompt Architecture.
