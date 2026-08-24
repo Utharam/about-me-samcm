@@ -1,4 +1,4 @@
-# Sam Chacko Maliyakel - Portfolio & Engineering Showcase
+# Sam C Maliyakel - Portfolio & Engineering Showcase
 
 > **Senior Finance & Family Office Specialist • Applied Domain Tooling • Tax & Systems Research**
 > 
@@ -12,7 +12,7 @@
 
 Finance professional with 8+ years managing full-cycle multi-entity accounting, **$1B+ multi-asset portfolio tracking**, and treasury operations in single-family office environments. Builder of privacy-first, client-side tools solving structural accounting friction.
 
-- **Direct Information FZC (2019 – 2025 | UAE)**: Assistant Accountant / Family Office Financial Operations ($1B+ Portfolio Engine, 40-Entity Governance Matrix, Historical Accrual Engine, Treasury & VAT Compliance).
+- **Direct Information FZC (2019 – 2025 | UAE)**: Accountant / Family Office Financial Operations ($1B+ Portfolio Engine, 40-Entity Governance Matrix, Historical Accrual Engine, Treasury & VAT Compliance).
 - **Nedumparambil Credit Syndicate (2017 – 2018 | India)**: Accountant (Balance sheet reconciliations, month-end closing).
 - **Thekkuthode Service Co-operative Bank (2016 – 2017 | India)**: Junior Accountant (GL books, legacy-to-core banking migration).
 
@@ -20,12 +20,12 @@ Finance professional with 8+ years managing full-cycle multi-entity accounting, 
 
 ## 🛠️ Domain Engineering & Privacy-First Repositories
 
-All tools are built with a zero-knowledge architecture where financial data never leaves client memory or touches cloud LLM backends:
+Client-side domain tools built with AI-assisted scaffolding and pair-programming where financial data never leaves client memory:
 
-1. **[LedgerDuck](https://github.com/Utharam/LedgerDuck)** — Zero-Knowledge SQL General Ledger & Trial Balance Audit Engine powered by DuckDB-Wasm & React.
+1. **[LedgerDuck](https://github.com/Utharam/LedgerDuck)** — Zero-Knowledge SQL General Ledger & Trial Balance Audit Engine powered by DuckDB-Wasm & React. ([Live Tool](https://utharam.github.io/LedgerDuck/))
 2. **[Corporate Structure Builder](https://github.com/Utharam/Corporate-structure-builder)** — Local-First Infinite Canvas & dynamic Cap Table visualization built with Vue 3, Pinia, Vue Flow, and Dexie.js (IndexedDB).
 3. **[Accounting Narration Generator](https://github.com/Utharam/narration-generator)** — Daily rollover deposit journal and interest calculator built with Vue 3 & LocalStorage. ([Live Tool](https://utharam.github.io/narration-generator/))
-4. **[Excel Cleaner & Reconciliation Engine](https://github.com/Utharam/excel-cleaner)** — ERP dump data sanitizer and rule-based column mapper powered by Vue 3 & SheetJS.
+4. **[Excel Cleaner & Reconciliation Engine](https://github.com/Utharam/excel-cleaner)** — ERP dump data sanitizer and rule-based column mapper powered by Vue 3 & SheetJS. ([Live Tool](https://utharam.github.io/excel-cleaner/))
 5. **[Main Deck](https://github.com/Utharam/Main-Deck)** — Desktop control surface & offline accounting PWA built with vanilla ES modules & browser-native IndexedDB. ([Live PWA](https://utharam.github.io/Main-Deck/))
 
 ---
@@ -43,16 +43,4 @@ All tools are built with a zero-knowledge architecture where financial data neve
 
 - **Qualifications**: CMA Intermediate (ICMAI), Master of Commerce (M.Com - Accounts & Finance, Annamalai University), Bachelor of Commerce (MG University).
 - **Domain Stack**: Multi-Entity Reporting, $1B+ Asset Portfolio Valuation, Cash vs. Accrual Modeling, UAE VAT Compliance, Intercompany Reconciliations, Tally ERP 9, Advanced Excel.
-- **Tech Stack**: DuckDB-Wasm, Vue 3, Vanilla JS, IndexedDB (Dexie.js), LocalStorage, SheetJS, Tailwind CSS, Schema-Only Prompt Architecture.
-
----
-
-## 🚀 Deployment
-
-The site is built as a zero-build standalone static page (`index.html`) using Tailwind CSS via CDN and Google Fonts.
-
-```bash
-git add index.html README.md
-git commit -m "feat: complete professional resume and privacy-first engineering showcase"
-git push origin main
-```
+- **AI-Assisted Applied Tooling Stack**: DuckDB-Wasm, Vue 3, Vanilla JS, IndexedDB (Dexie.js), LocalStorage, SheetJS, Tailwind CSS, Schema-Only Prompt Architecture.
