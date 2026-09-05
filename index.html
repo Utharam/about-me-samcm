@@ -270,7 +270,7 @@
               <p class="text-base font-medium text-cyan-700 dark:text-cyan-400 mt-1">Accountant / Family Office Financial Operations</p>
             </div>
             <div class="text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 self-start sm:self-auto">
-              May 2019 – 2025 | UAE
+              May 2019 – Mar 2026 | UAE
             </div>
           </div>
 
@@ -364,7 +364,7 @@
 
         <!-- Filter Buttons -->
         <div class="flex items-center gap-2 text-xs font-mono flex-wrap" id="project-filters">
-          <button onclick="filterProjects('all')" class="filter-btn px-3 py-1.5 rounded-lg bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-400 border border-cyan-300 dark:border-cyan-500/40 transition-all" data-filter="all">All (5)</button>
+          <button onclick="filterProjects('all')" class="filter-btn px-3 py-1.5 rounded-lg bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-400 border border-cyan-300 dark:border-cyan-500/40 transition-all" data-filter="all">All (6)</button>
           <button onclick="filterProjects('zk')" class="filter-btn px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-slate-200 transition-all" data-filter="zk">Zero-Knowledge SQL</button>
           <button onclick="filterProjects('pwa')" class="filter-btn px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-slate-200 transition-all" data-filter="pwa">Local-First / PWA</button>
           <button onclick="filterProjects('automation')" class="filter-btn px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-slate-200 transition-all" data-filter="automation">Automation</button>
@@ -445,7 +445,40 @@
           </div>
         </div>
 
-        <!-- Project 3: Accounting Narration Generator -->
+        <!-- Project 3: SheetHound (Spreadsheet Watchdog) -->
+        <div class="project-card rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-6 flex flex-col justify-between hover:border-cyan-500/50 transition-all shadow-sm dark:shadow-none" data-category="automation">
+          <div class="space-y-5">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">SheetHound</h3>
+                <p class="text-xs font-mono text-cyan-700 dark:text-cyan-400 mt-1">The Spreadsheet Watchdog • In-Browser Inspection</p>
+              </div>
+              <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/60 text-cyan-800 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800/40">100% In-Browser</span>
+            </div>
+
+            <div class="space-y-3 text-sm">
+              <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                <strong class="text-slate-900 dark:text-slate-200">Problem Solved:</strong> Catching external link leaks, broken #REF! errors, hidden tabs, stray out-of-bounds cells, formula directories, and style inconsistencies before sending workbooks to clients or executives.
+              </p>
+              <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">
+                Inspects workbook internals 100% in-browser on client memory with zero data transmission. Provides comprehensive formula indexing, external dependency mapping, and styling health audits.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-500 dark:text-slate-400">
+              <span class="bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded">Spreadsheet Inspector</span>
+              <span class="bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded">Zero-Data Leak</span>
+            </div>
+            <a href="https://sheethound.utharam.workers.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-emerald-600 dark:text-emerald-400 hover:underline">
+              <span>Live Tool</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Accounting Narration Generator -->
         <div class="project-card rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-6 flex flex-col justify-between hover:border-cyan-500/50 transition-all shadow-sm dark:shadow-none" data-category="automation">
           <div class="space-y-5">
             <div class="flex items-start justify-between gap-3">
@@ -484,7 +517,7 @@
           </div>
         </div>
 
-        <!-- Project 4: Excel Cleaner & Reconciliation Engine -->
+        <!-- Project 5: Excel Cleaner & Reconciliation Engine -->
         <div class="project-card rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-6 flex flex-col justify-between hover:border-cyan-500/50 transition-all shadow-sm dark:shadow-none" data-category="automation">
           <div class="space-y-5">
             <div class="flex items-start justify-between gap-3">
@@ -523,8 +556,8 @@
           </div>
         </div>
 
-        <!-- Project 5: Main Deck -->
-        <div class="project-card rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-6 flex flex-col justify-between hover:border-cyan-500/50 transition-all shadow-sm dark:shadow-none md:col-span-2" data-category="pwa">
+        <!-- Project 6: Main Deck -->
+        <div class="project-card rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-6 flex flex-col justify-between hover:border-cyan-500/50 transition-all shadow-sm dark:shadow-none" data-category="pwa">
           <div class="space-y-5">
             <div class="flex items-start justify-between gap-3">
               <div>
@@ -534,7 +567,7 @@
               <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/40">Live PWA</span>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6 text-sm">
+            <div class="space-y-3 text-sm">
               <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
                 <strong class="text-slate-900 dark:text-slate-200">Problem Solved:</strong> Standard productivity apps detach day-to-day work from recurring month-end accounting cycles, closing checklists, structured SOPs, and deep focus realities.
               </p>
@@ -547,8 +580,7 @@
           <div class="pt-4 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80">
             <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-500 dark:text-slate-400">
               <span class="bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded">PWA</span>
-              <span class="bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded">Native IndexedDB</span>
-              <span class="bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded">Zero Build Step</span>
+              <span class="bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded">IndexedDB</span>
             </div>
             <div class="flex items-center gap-4">
               <a href="https://utharam.github.io/Main-Deck/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-medium text-emerald-600 dark:text-emerald-400 hover:underline">
@@ -661,7 +693,26 @@
           </div>
         </a>
 
-        <!-- Essay 3 -->
+        <!-- Essay 3: Prompts vs Dumb Questions -->
+        <a href="https://medium.com/@samcmaliyakel/prompts-vs-dumb-questions-how-should-we-really-talk-to-ai-a0af990882c2" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-white dark:bg-slate-900/30 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-4 hover:border-cyan-500/50 hover:shadow-md transition-all flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500 dark:text-slate-400">
+              <span class="text-cyan-700 dark:text-cyan-400">AI & Communication</span>
+              <span class="group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">Medium ↗</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors leading-snug">
+              Prompts vs. Dumb Questions: How Should We Really Talk to AI?
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              A grounded perspective on human-AI interaction—why treating models with iterative inquiry, domain curiosity, and conversational dialogue often outperforms rigid, over-engineered prompt formulas.
+            </p>
+          </div>
+          <div class="text-xs font-medium text-cyan-700 dark:text-cyan-400 pt-2">
+            Read Essay →
+          </div>
+        </a>
+
+        <!-- Essay 4 -->
         <a href="https://medium.com/@samcmaliyakel/stepping-on-the-grass-in-the-post-ai-era-36e511831e17" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-white dark:bg-slate-900/30 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-4 hover:border-cyan-500/50 hover:shadow-md transition-all flex flex-col justify-between">
           <div class="space-y-3">
             <div class="flex items-center justify-between text-xs font-mono text-slate-500 dark:text-slate-400">
@@ -680,8 +731,8 @@
           </div>
         </a>
 
-        <!-- Essay 4 -->
-        <a href="https://medium.com/@samcmaliyakel/the-emotion-token-theory-ai-and-the-future-of-human-relationships-c8dd6498f687" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-white dark:bg-slate-900/30 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-4 hover:border-cyan-500/50 hover:shadow-md transition-all flex flex-col justify-between">
+        <!-- Essay 5 -->
+        <a href="https://medium.com/@samcmaliyakel/the-emotion-token-theory-ai-and-the-future-of-human-relationships-c8dd6498f687" target="_blank" rel="noopener noreferrer" class="group rounded-2xl bg-white dark:bg-slate-900/30 border border-slate-200/90 dark:border-slate-800/80 p-8 space-y-4 hover:border-cyan-500/50 hover:shadow-md transition-all flex flex-col justify-between md:col-span-2" data-span="full">
           <div class="space-y-3">
             <div class="flex items-center justify-between text-xs font-mono text-slate-500 dark:text-slate-400">
               <span class="text-cyan-700 dark:text-cyan-400">Human Dynamics</span>
