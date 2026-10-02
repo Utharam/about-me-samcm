@@ -23,12 +23,20 @@ Finance professional with 8+ years managing full-cycle multi-entity accounting, 
 
 Client-side domain tools built with AI-assisted scaffolding and pair-programming where financial data never leaves client memory:
 
-1. **[LedgerDuck](https://github.com/Utharam/LedgerDuck)** — Zero-Knowledge SQL General Ledger & Trial Balance Audit Engine powered by DuckDB-Wasm & React. ([Live Tool](https://utharam.github.io/LedgerDuck/))
-2. **[Corporate Structure Builder](https://github.com/Utharam/Corporate-structure-builder)** — Local-First Infinite Canvas & dynamic Cap Table visualization built with Vue 3, Pinia, Vue Flow, and Dexie.js (IndexedDB).
-3. **[SheetHound](https://sheethound.utharam.workers.dev/)** — The Spreadsheet Watchdog: 100% in-browser inspector for external link leaks, #REF! errors, hidden tabs, stray cells, and formula directories. ([Live Tool](https://sheethound.utharam.workers.dev/))
-4. **[Accounting Narration Generator](https://github.com/Utharam/narration-generator)** — Daily rollover deposit journal and interest calculator built with Vue 3 & LocalStorage. ([Live Tool](https://utharam.github.io/narration-generator/))
-5. **[Excel Cleaner & Reconciliation Engine](https://github.com/Utharam/excel-cleaner)** — ERP dump data sanitizer and rule-based column mapper powered by Vue 3 & SheetJS. ([Live Tool](https://utharam.github.io/excel-cleaner/))
-6. **[Main Deck](https://github.com/Utharam/Main-Deck)** — Desktop control surface & offline accounting PWA built with vanilla ES modules & browser-native IndexedDB. ([Live PWA](https://utharam.github.io/Main-Deck/))
+1. **[SheetHound](https://sheethound.utharam.in/)** — The Spreadsheet Watchdog: 100% in-browser pre-flight workbook forensics for ghost links, `#REF!` cascades, hidden XML sheets, and stray cells before sending to clients/auditors. ([Live Tool](https://sheethound.utharam.in/))
+2. **[LedgerDuck](https://github.com/Utharam/LedgerDuck)** — Zero-Knowledge SQL General Ledger & Trial Balance Audit Engine powered by DuckDB-Wasm & React. ([Live Tool](https://utharam.github.io/LedgerDuck/))
+3. **[GST Interactive](https://gstinteractive.netlify.app/)** — Statutory Simulator & Study Notes for GST double-entry ledgers, Rule 86B cash limits, and GSTR-3B set-off hierarchy. ([Live Tool](https://gstinteractive.netlify.app/))
+4. **[InvoiceCraft](https://invoicecraft.utharam.in/)** — Client-Side Invoice & Estimate Builder storing documents, clients, and templates locally in IndexedDB with vector PDF export. ([Live Tool](https://invoicecraft.utharam.in/))
+5. **[AgroShop Manager](https://agroshopmanager.utharam.in/)** — Point-of-Sale & inventory system for agricultural merchants with GST reverse charge (RCM) auto-balancing and offline PWA support. ([Live Tool](https://agroshopmanager.utharam.in/))
+6. **[LexHop Reader](https://github.com/Utharam/lexhop)** — In-browser statutory document reader with KWIC term concordance and side-by-side clause comparison tray. ([Live Tool](https://lexhop.utharam.in/))
+7. **[Accounting Narration Generator](https://github.com/Utharam/narration-generator)** — Daily rollover deposit journal and interest calculator built with Vue 3 & LocalStorage. ([Live Tool](https://narration-generator.utharam.in/))
+8. **[Excel Cleaner & Reconciliation Engine](https://github.com/Utharam/excel-cleaner)** — ERP dump data sanitizer and rule-based column mapper powered by Vue 3 & SheetJS. ([Live Tool](https://excel-cleaner.utharam.in/))
+9. **[Main Deck](https://github.com/Utharam/Main-Deck)** — Desktop control surface & offline accounting PWA built with vanilla ES modules & browser-native IndexedDB. ([Live PWA](https://main-deck.utharam.in/))
+
+### 🔬 Active R&D Lab Pipeline
+- **Flowbook** — Hybrid Event + Double-Entry Accounting Philosophy.
+- **[Corporate Structure Builder](https://github.com/Utharam/Corporate-structure-builder)** — Local-First Infinite Canvas & dynamic Cap Table / UBO visualization.
+- **HR Dashboard** — Lean operational surface for attendance and statutory payroll deductions.
 
 ---
 
@@ -46,4 +54,4 @@ Client-side domain tools built with AI-assisted scaffolding and pair-programming
 
 - **Qualifications**: CMA Intermediate (ICMAI), Master of Commerce (M.Com - Accounts & Finance, Annamalai University), Bachelor of Commerce (MG University).
 - **Domain Stack**: Multi-Entity Reporting, $1B+ Asset Portfolio Valuation, Cash vs. Accrual Modeling, UAE VAT Compliance, Intercompany Reconciliations, Tally ERP 9.
-- **AI-Assisted Applied Tooling Stack**: DuckDB-Wasm, Vue 3, Vanilla JS, IndexedDB (Dexie.js), LocalStorage, SheetJS, Tailwind CSS, Schema-Only Prompt Architecture.
+- **AI-Assisted Applied Tooling Stack**: DuckDB-Wasm, React, Vue 3, Vanilla JS, IndexedDB (Dexie.js), LocalStorage, SheetJS, Tailwind CSS, Schema-Only Prompt Architecture.
